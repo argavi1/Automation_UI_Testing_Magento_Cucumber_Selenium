@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Website magento normal checkout
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 173.222 s - in Website magento normal checkout

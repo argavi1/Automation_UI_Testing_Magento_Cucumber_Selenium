@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>auto-magento</td>
+                          <td>1</td>
+                        <td>17 Mar 2023, 21:03</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">StepDef.magentoDef.userChangeTheQty()</td>
+                <td>1</td>
+                <td class="duration" data-value="7155000000">7s 155ms</td>
+                <td class="duration" data-value="7155000000">7s 155ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.magentoDef.userClickAddToChartButton()</td>
+                <td>2</td>
+                <td class="duration" data-value="4156000000">4s 156ms</td>
+                <td class="duration" data-value="2078000000">2s 078ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.magentoDef.userClickAutomationTesterDropdown()</td>
+                <td>1</td>
+                <td class="duration" data-value="5084000000">5s 084ms</td>
+                <td class="duration" data-value="5084000000">5s 084ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.magentoDef.userClickCartIcon()</td>
+                <td>1</td>
+                <td class="duration" data-value="3089000000">3s 089ms</td>
+                <td class="duration" data-value="3089000000">3s 089ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.magentoDef.userClickCronusYogaPantSection()</td>
+                <td>1</td>
+                <td class="duration" data-value="6884000000">6s 884ms</td>
+                <td class="duration" data-value="6884000000">6s 884ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.magentoDef.userClickJacketsHyperlinkTextOnTopSection()</td>
+                <td>1</td>
+                <td class="duration" data-value="9411000000">9s 411ms</td>
+                <td class="duration" data-value="9411000000">9s 411ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.magentoDef.userClickMensDropdown()</td>
+                <td>2</td>
+                <td class="duration" data-value="12771000000">12s 771ms</td>
+                <td class="duration" data-value="6385500000">6s 385ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.magentoDef.userClickMyAccountHyperlinkText()</td>
+                <td>1</td>
+                <td class="duration" data-value="5141000000">5s 141ms</td>
+                <td class="duration" data-value="5141000000">5s 141ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.magentoDef.userClickMyOrderHyperlinkText()</td>
+                <td>1</td>
+                <td class="duration" data-value="5352000000">5s 352ms</td>
+                <td class="duration" data-value="5352000000">5s 352ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.magentoDef.userClickNextButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="3076000000">3s 076ms</td>
+                <td class="duration" data-value="3076000000">3s 076ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.magentoDef.userClickOrderSummaryDropdown()</td>
+                <td>1</td>
+                <td class="duration" data-value="10114000000">10s 114ms</td>
+                <td class="duration" data-value="10114000000">10s 114ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.magentoDef.userClickPantsHyperlinkTextOnBottomsSection()</td>
+                <td>1</td>
+                <td class="duration" data-value="6531000000">6s 531ms</td>
+                <td class="duration" data-value="6531000000">6s 531ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.magentoDef.userClickPlaceOrderButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="5090000000">5s 090ms</td>
+                <td class="duration" data-value="5090000000">5s 090ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.magentoDef.userClickProceedToCheckoutButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="5089000000">5s 089ms</td>
+                <td class="duration" data-value="5089000000">5s 089ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.magentoDef.userClickProteusFitnessJackshirtSection()</td>
+                <td>1</td>
+                <td class="duration" data-value="7712000000">7s 712ms</td>
+                <td class="duration" data-value="7712000000">7s 712ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.magentoDef.userClickSignInButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="8599000000">8s 599ms</td>
+                <td class="duration" data-value="8599000000">8s 599ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.magentoDef.userClickSignInHyperlinkText()</td>
+                <td>1</td>
+                <td class="duration" data-value="6409000000">6s 409ms</td>
+                <td class="duration" data-value="6409000000">6s 409ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.magentoDef.userClickSizeAndColorBlack()</td>
+                <td>1</td>
+                <td class="duration" data-value="7189000000">7s 189ms</td>
+                <td class="duration" data-value="7189000000">7s 189ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.magentoDef.userClickTheLatestViewOrderHyperlinkText()</td>
+                <td>1</td>
+                <td class="duration" data-value="5151000000">5s 151ms</td>
+                <td class="duration" data-value="5151000000">5s 151ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.magentoDef.userClickXSSizeAndColorBlack()</td>
+                <td>1</td>
+                <td class="duration" data-value="7221000000">7s 221ms</td>
+                <td class="duration" data-value="7221000000">7s 221ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.magentoDef.userCouldVerifyProductAndPriceOnItemsOrderedSection()</td>
+                <td>1</td>
+                <td class="duration" data-value="12173000000">12s 173ms</td>
+                <td class="duration" data-value="12173000000">12s 173ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.magentoDef.userInputEmailAndPassword(java.lang.String,java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="10244000000">10s 244ms</td>
+                <td class="duration" data-value="10244000000">10s 244ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.magentoDef.userOpenWebUrl(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="7199000000">7s 199ms</td>
+                <td class="duration" data-value="7199000000">7s 199ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.magentoDef.userVerifyProductAndPriceJacketsOnOrderSummarySection()</td>
+                <td>1</td>
+                <td class="duration" data-value="6092000000">6s 092ms</td>
+                <td class="duration" data-value="6092000000">6s 092ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.magentoDef.userVerifyProductAndPricePantsOnOrderSummarySection()</td>
+                <td>1</td>
+                <td class="duration" data-value="6060000000">6s 060ms</td>
+                <td class="duration" data-value="6060000000">6s 060ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>25</td>
+              <td>27</td>
+              <td class="duration">2m 52s 992ms</td>
+              <td class="duration">6s 407ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
