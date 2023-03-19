@@ -1,4 +1,5 @@
 Automation UI Testing for Magento SoftwareTestingDashboard
+
 This is an automation UI testing project for Magento SoftwareTestingDashboard website, which is written in Java programming language and uses Cucumber and Selenium plugins.
 
 Scenario
