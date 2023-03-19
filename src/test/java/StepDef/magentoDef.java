@@ -110,21 +110,21 @@ public class magentoDef {
 
     @And("User click proceed to checkout button")
     public void userClickProceedToCheckoutButton() throws InterruptedException {
-        Thread.sleep(3000);
+        Thread.sleep(10000);
         driver.findElement(By.id("top-cart-btn-checkout")).click();
     }
 
     @And("User click order summary dropdown")
     public void userClickOrderSummaryDropdown() throws InterruptedException {
-        Thread.sleep(10000);
+        Thread.sleep(15000);
         driver.findElement(By.xpath("//div[@class='title']")).click();
     }
 
     @And("User verify product and price jackets on order summary section")
     public void userVerifyProductAndPriceJacketsOnOrderSummarySection() throws InterruptedException {
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         Assert.assertTrue(driver.findElement(By.xpath("//strong[text()='Proteus Fitness Jackshirt']")).isDisplayed());
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         Assert.assertTrue(driver.findElement(By.xpath("//span[text()='$90.00']")).isDisplayed());
     }
 
@@ -144,7 +144,7 @@ public class magentoDef {
 
     @And("User click Place Order button")
     public void userClickPlaceOrderButton() throws InterruptedException {
-        Thread.sleep(5000);
+        Thread.sleep(10000);
         driver.findElement(By.xpath("//button[@title='Place Order']")).click();
     }
 
